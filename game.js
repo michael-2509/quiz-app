@@ -22,7 +22,7 @@ let questions = [
     answer: 1
 },
 {
-	question:'what country did coranovirus start from? ',
+	question:'which country did coranovirus start from? ',
 
 	choice1:'USA', 
     choice2: 'CHINA', 
@@ -40,7 +40,7 @@ let questions = [
      answer: 1
 },
 {
-	question:'which of this is the heart of a music',
+	question:'which of these, is the heart of a music',
 
 	choice1:'piano', 
     choice2: 'tamborine', 
@@ -49,12 +49,12 @@ let questions = [
     answer: 3
 },
 {
-	question:'how would define love',
+	question:'which of these describes love',
 
 	choice1:'sacrifice', 
     choice2: 'friends for benefit', 
-    choice3: 'you know the levels',
-    choice4: 'what they do when they are bored',  
+    choice3: 'caring when you can',
+    choice4: 'selfishness',  
     answer: 1
 }
 ];
@@ -111,10 +111,10 @@ getNewQuestion = () => {
 
 		selectedChoice.parentElement.classList.add(classToApply);
 
-		setTimeout (() => {
-			selectedChoice.parentElement.classList.remove(classToApply);
+		      
+window.nextQuestion = function() {   selectedChoice.parentElement.classList.remove(classToApply);
 			getNewQuestion();
-		},1000);
+		};
 		  
    		
    	});
